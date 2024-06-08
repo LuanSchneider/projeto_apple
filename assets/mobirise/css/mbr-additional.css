@@ -170,6 +170,25 @@ body {
   color: #ffffff !important;
   box-shadow: none;
 }
+.login,
+.login:active{
+  position: fixed;
+  background-color: #e5383b !important;
+  border-color: #e5383b !important;
+  color: #ffffff !important;
+  box-shadow: none;
+  font-style:normal;
+  font-size: 200%;
+  font-weight: 600;
+  right: 28%;
+  top: 3.5%;
+}
+.login{
+  padding: 1.25rem 2rem;
+    border-radius: 4px;
+    border-radius: 100px;
+    
+}
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -179,8 +198,24 @@ body {
   border-color: #eb6567 !important;
   box-shadow: none;
 }
+.login:hover,
+.login:focus,
+.login.focus,
+.login.active {
+  color: inherit;
+  background-color: #eb6567 !important;
+  border-color: #eb6567 !important;
+  box-shadow: none;
+  
+}
 .btn-primary.disabled,
 .btn-primary:disabled {
+  color: #ffffff !important;
+  background-color: #eb6567 !important;
+  border-color: #eb6567 !important;
+}
+.login.disabled,
+.login:disabled {
   color: #ffffff !important;
   background-color: #eb6567 !important;
   border-color: #eb6567 !important;
