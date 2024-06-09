@@ -16,10 +16,9 @@ img,
 .video-wrapper {
   overflow: hidden;
 }
+
 body {
-  background-color: #f0e6e6;
-}
-body {
+  width: 100%;
   font-family: Manrope;
 }
 .display-1 {
@@ -793,6 +792,12 @@ body {
 a {
   transition: color 0.6s;
 }
+.container{
+position: fixed;
+bottom: 1%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;
@@ -802,6 +807,9 @@ a {
   .container {
     padding-left: 32px;
     padding-right: 32px;
+
+
+    top: 45%;
   }
 }
 @media (max-width: 1400px) and (min-width: 768px) {
