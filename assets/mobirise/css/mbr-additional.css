@@ -792,12 +792,7 @@ body {
 a {
   transition: color 0.6s;
 }
-.container{
-position: fixed;
-bottom: 1%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;
@@ -805,11 +800,11 @@ transform: translate(-50%,-50%);
 }
 @media (max-width: 1400px) and (min-width: 768px) {
   .container {
-    padding-left: 32px;
+    padding-left: 52px;
     padding-right: 32px;
 
 
-    top: 45%;
+    top: 65%;
   }
 }
 @media (max-width: 1400px) and (min-width: 768px) {
@@ -2292,4 +2287,11 @@ transform: translate(-50%,-50%);
 }
 .cid-uf7wBBWhDX .mbr-section-title {
   color: #ffffff;
+}
+#form03-0{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
 }
