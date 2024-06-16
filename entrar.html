@@ -46,24 +46,58 @@
                                 Oops...! some problem!
                             </div>
                         </div>
-                        <div class="dragArea row">
-                            <div class="col-md col-sm-12 form-group mb-3 mb-3" data-for="name">
-                                <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form03-0">
+                        <!DOCTYPE html>
+                        <html lang="pt">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Formulário de Compra</title>
+                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                            <script>
+                                function redirecionarParaWhatsApp() {
+                                    // Obter os valores dos campos do formulário
+                                    var name = document.getElementById('name-form03-0').value;
+                                    var email = document.getElementById('email-form03-0').value;
+                                    var phone = document.getElementById('phone-form03-0').value;
+                                    var descricao = document.getElementById('textarea-form03-0').value;
+                        
+                                    // Construir a mensagem para o WhatsApp
+                                    var mensagem = `Nome: ${name}\nE-mail: ${email}\nProduto: ${phone}\nDescrição do Produto: ${descricao}`;
+                        
+                                    // Número de telefone do WhatsApp (incluindo o código do país e DDD)
+                                    var numeroWhatsApp = '55394172519';
+                        
+                                    // Construir a URL do WhatsApp
+                                    var urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+                        
+                                    // Redirecionar para a URL do WhatsApp
+                                    window.location.href = urlWhatsApp;
+                                }
+                            </script>
+                        </head>
+                        <body>
+                            <div class="container">
+                                <form>
+                                    <div class="dragArea row">
+                                        <div class="col-md col-sm-12 form-group mb-3 mb-3" data-for="name">
+                                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form03-0">
+                                        </div>
+                                        <div class="col-md col-sm-12 form-group mb-3 mb-3" data-for="email">
+                                            <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form03-0">
+                                        </div>
+                                        <div class="col-12 form-group mb-3 mb-3" data-for="phone">
+                                            <input type="tel" name="phone" placeholder="Produto" data-form-field="phone" class="form-control" value="" id="phone-form03-0">
+                                        </div>
+                                        <div class="col-12 form-group mb-3 mb-3" data-for="textarea">
+                                            <textarea name="textarea" placeholder="descrição do produto" data-form-field="textarea" class="form-control" id="textarea-form03-0"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                                            <button type="button" class="btn btn-primary display-7" onclick="redirecionarParaWhatsApp()"><span></span>comprar</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="col-md col-sm-12 form-group mb-3 mb-3" data-for="email">
-                                <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form03-0">
-                            </div>
-                            <div class="col-12 form-group mb-3 mb-3" data-for="phone">
-                                <input type="tel" name="phone" placeholder="Produto" data-form-field="phone" class="form-control" value="" id="phone-form03-0">
-                            </div>
-                            <div class="col-12 form-group mb-3 mb-3" data-for="textarea">
-                                <textarea name="textarea" placeholder="descrição do produto" data-form-field="textarea" class="form-control" id="textarea-form03-0"></textarea>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-7"><span ></span>comprar</button></div>
-                        </div>
-                    </form>
-                </div>
-
+                     
 
             </div>
             <div class="col-12 col-lg-6">
